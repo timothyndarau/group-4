@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ChildComponent from "./ChildComponent";
 //this is a parent component
+
 const ParentComponent = () => {
   //declare state variable to store messege from child
   const [messageFromChild, setMessageFromChild] = useState("");
@@ -8,7 +9,7 @@ const ParentComponent = () => {
   const age = 30;
   //Callback function to receive data from the child
   const handleDataFromChild = (data) => {
-    //sets the state variable  with the value of data.
+    //sets the state variable  with the value of data from the child component 
     setMessageFromChild(data);
   };
 

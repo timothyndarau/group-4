@@ -1,9 +1,11 @@
-import React from 'react';
+import React from "react";
 
-const ChildComponent = ({ onData,name,age }) => {
+//This is the child component
+// receives props as parameters from the parent component.
+const ChildComponent = ({ onData, name, age }) => {
   const handleClick = () => {
     // Simulating data sent from the child to the parent
-    const dataToSend = 'Hello from the Child!';
+    const dataToSend = "Hello from the Child!";
     onData(dataToSend); // Calling the callback function with data
   };
 
@@ -18,5 +20,3 @@ const ChildComponent = ({ onData,name,age }) => {
 };
 
 export default ChildComponent;
-
-
