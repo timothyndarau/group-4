@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+
+.parent-container {
+  background-color: #cc8e8e;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.parent-heading {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+*{
+  background-color: #cc8e8e;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.parent-message {
+  font-family: Arial, Helvetica, sans-serif;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #000000;
+  font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Styles for the ChildComponent */
+.child-container {
+  background-color: #e0e0e0;
+  padding: 10px;
+  border: 1px solid #999;
+  margin: 10px;
+  margin-left: 10px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.child-heading {
+  color: #444;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.child-button {
+
+  background-color: #007bff;
+  color: #fcf7f7;
+  font-size: 16px;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.8s;
+}
+.child-button:hover  {
+                  background-color: rgb(37, 47, 47);
+                  color: #cc8e8e;
 }

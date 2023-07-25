@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ChildComponent from "./ChildComponent";
+import '../App.css';
 //this is a parent component
 
 const ParentComponent = () => {
@@ -14,9 +15,9 @@ const ParentComponent = () => {
   };
 
   return (
-    <div>
-      <h1>Parent Component</h1>
-      <p>Message from Child: {messageFromChild}</p>
+    <div className="parent-container">
+      <h1 className="parent-heading">Parent Component</h1>
+      <p className="parent-message">Message from Child: {messageFromChild}</p>
       <ChildComponent onData={handleDataFromChild} name={name} age={age} />
     </div>
   );

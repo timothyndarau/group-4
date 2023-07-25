@@ -11,10 +11,10 @@ const ChildComponent = ({ onData, name, age }) => {
 
   return (
     <div>
-      <h2>Child Component</h2>
+      <h2 className="child-heading">Child Component</h2>
       <p>Name: {name}</p>
       <p>Age: {age}</p>
-      <button onClick={handleClick}>Send Message to Parent</button>
+      <button onClick={handleClick} className="child-button">Send Message to Parent</button>
     </div>
   );
 };
